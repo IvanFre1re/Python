@@ -1,29 +1,15 @@
-# Program that calculates the amount of money 
+print('Seja bem vindo ao programa de calculadora');
 
-#print('Welcome to the tip calculator')
+total = float(input('Qual o total da conta?'));
 
-#totalVar = float(input('What was the total bill?'))
-#peopleVar = int(input('How many people to split the bill?'))
-#percentageVar = 
+pessoas = int(input('Quantas pessoas vão dividir a conta'));
 
+porcentagem = float(input('Quantos porcento vai dar de gorjeta?'));
 
-x = input('Type a two digit number')
+calc = (total / pessoas) + (total / pessoas * porcentagem / 100)
+calc_rounded = round(calc, 2);
 
-z = x[0]
-
-y = x[1]
-
-numero1 = int(z)
-
-numero2 = int(y)
-
-print(numero1 + numero2)
-
-
-
-
-
-
+print(f'Cada pessoa deve pagar {calc_rounded}');
 
 
 
